@@ -88,7 +88,7 @@ if submit:
         with st.spinner('Processing PDF...'):
             text = input_pdf_text(uploaded_file)
         if text:
-            with st.spinner('Getting Gemini response...'):
+            with st.spinner('Getting response...'):
                 response = get_gemini_response(input_prompt.format(text=text, jd=jd))
             if response:
                 with st.spinner('Processing response...'):
